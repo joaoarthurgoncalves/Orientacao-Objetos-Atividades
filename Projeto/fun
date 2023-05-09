@@ -1,0 +1,38 @@
+package Modelo_Funcionario;
+
+public class Funcionario {
+
+	private String primeiroNome;
+	private String sobrenome;
+	private String cargo;
+	private float salarioMensal;
+	
+	public String getPrimeiroNome() {
+		return primeiroNome;
+	}
+	public void setPrimeiroNome(String primeiroNome) {
+		this.primeiroNome = primeiroNome;
+	}
+	public String getSobrenome() {
+		return sobrenome;
+	}
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+	public String getCargo() {
+		return cargo;
+	}
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+	public float getSalarioMensal() {
+		return salarioMensal;
+	}
+	public void setSalarioMensal(float salarioMensal) {
+		this.salarioMensal = salarioMensal;
+	}
+	public float getSalarioAnual() {
+		return 12*salarioMensal;
+	}
+
+}
