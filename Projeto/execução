@@ -1,0 +1,128 @@
+package Execucao_Funcionario;
+
+
+
+import java.util.Scanner;
+
+
+
+import Modelo_Funcionario.Funcionario;
+
+
+
+public class FuncionarioExecucao {
+
+
+
+	public static void main(String[] args) {
+
+
+	//Criação dos funcionários
+
+
+	Scanner sc = new Scanner(System.in);
+
+
+	Funcionario fun1 = new Funcionario();
+
+
+
+	System.out.println("---Primeiro Funcionário---");
+
+
+	System.out.print("Qual é seu primeiro nome? ");
+
+	String primeiroNome = sc.nextLine();
+
+
+	System.out.print("Qual é seu sobrenome? ");
+
+	String sobrenome = sc.nextLine();
+
+
+	System.out.print("Qual é o cargo que você ocupa? ");
+
+	String cargo = sc.nextLine();
+
+
+	System.out.print("Qual é seu salário mensal? ");
+
+	int salarioMensal = Integer.parseInt(sc.nextLine());
+
+
+	fun1.setPrimeiroNome(primeiroNome);
+
+	fun1.setSobrenome(sobrenome);
+
+	fun1.setCargo(cargo);
+
+	fun1.setSalarioMensal(salarioMensal);
+
+
+	System.out.println("O Funcionário " + primeiroNome + " " + sobrenome + ", cargo " + cargo + ", recebe um salário anual de R$" + fun1.getSalarioAnual() + ".");
+
+      Funcionario fun2 = new Funcionario();
+
+      System.out.println("---Segundo Funcionário---");
+      System.out.print("Qual é seu primeiro nome? ");
+
+      String primeiroNome = sc.nextLine();
+
+      System.out.print("Qual é seu sobrenome? ");
+
+      String sobrenome = sc.nextLine();
+
+      System.out.print("Qual é o cargo que você ocupa? ");
+
+      String cargo = sc.nextLine();
+
+      System.out.print("Qual é seu salário mensal? ");
+
+      int salarioMensal = Integer.parseInt(sc.nextLine());
+
+      fun2.setPrimeiroNome(primeiroNome);
+
+      fun2.setSobrenome(sobrenome);
+
+      fun2.setCargo(cargo);
+
+      fun2.setSalarioMensal(salarioMensal);
+
+      System.out.println("O Funcionário " + fun2.primeiroNome + " " + fun2.sobrenome + ", cargo " + fun2.cargo + ", recebe um salário anual de R$" + fun2.getSalarioAnual() + ".");
+
+
+      Funcionario fun3 = new Funcionario();
+
+      System.out.println("---Terceiro Funcionário---");
+
+      System.out.print("Qual é seu primeiro nome? ");
+
+      String primeiroNome = sc.nextLine();
+
+      System.out.print("Qual é seu sobrenome? ");
+
+      String sobrenome = sc.nextLine();
+
+      System.out.print("Qual é o cargo que você ocupa? ");
+
+      String cargo = sc.nextLine();
+
+      System.out.print("Qual é seu salário mensal? ");
+
+      int salarioMensal = Integer.parseInt(sc.nextLine());
+
+      fun3.setPrimeiroNome(primeiroNome);
+
+      fun3.setSobrenome(sobrenome);
+
+      fun3.setCargo(cargo);
+
+      fun3.setSalarioMensal(salarioMensal);
+
+      System.out.println("O Funcionário " + fun3.primeiroNome + " " + fun3.sobrenome + ", cargo " + fun3.cargo + ", recebe um salário anual de R$" + fun3.getSalarioAnual() + ".");
+
+  }
+
+ }
+
+}
