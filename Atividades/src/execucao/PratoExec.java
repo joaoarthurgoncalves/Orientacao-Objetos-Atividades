@@ -1,8 +1,9 @@
-ackage execucao;
+package execucao;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 import modelo.Prato;
 
 public class PratoExec {
@@ -46,7 +47,8 @@ public class PratoExec {
 		for(Prato pt : Lista) {
 			System.out.println(pt.getInfo());
 			
+			
+			System.out.println("O valor total gasto com a janta foi de: "+Valor+" reais.");
 		}
-		
 	}
 }
