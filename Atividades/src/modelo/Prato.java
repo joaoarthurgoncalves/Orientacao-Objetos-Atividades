@@ -5,6 +5,7 @@ public class Prato {
 private String descricao;	
 private Integer quantidade;
 private Double ValorUnitario;
+private Double ValorPrato;
 	 
 public String getDescricao() {
 	return descricao;
@@ -27,6 +28,7 @@ public void setValorUnitario(Double ValorUnitario) {
 
 public Double getValorTotal() {
 	Double ValorPrato = this.ValorUnitario * this.quantidade;
+	this.ValorPrato = ValorPrato;
 	return ValorPrato;
 }
 	
@@ -34,7 +36,8 @@ public Double getValorTotal() {
 		String info = "Descrição: " + this.descricao;
 		info += " - Quantidade: " + this.quantidade; 
 		info += " - Valor Unitário: " + this.ValorUnitario;
+		info += " - Valor Total: " + this.ValorPrato;
 		return info;
 	}
+	
 }
-
