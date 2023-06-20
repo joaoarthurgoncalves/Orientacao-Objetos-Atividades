@@ -35,8 +35,7 @@ public Double getValorTotal() {
 		info += " - Quantidade: " + this.quantidade; 
 		info += " - Valor Unitário: " + this.ValorUnitario;
 		return info;
-}
-
+	}
 
 }
 
