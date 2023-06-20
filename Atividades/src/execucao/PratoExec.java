@@ -46,7 +46,8 @@ public class PratoExec {
 		System.out.println("/-------Pratos Registrados-------/");
 		for(Prato pt : Lista) {
 			System.out.println(pt.getInfo());
-		
+			
+			
 		}
 		System.out.println("O valor total gasto com a janta foi de: "+Valor+" reais.");
 	}
