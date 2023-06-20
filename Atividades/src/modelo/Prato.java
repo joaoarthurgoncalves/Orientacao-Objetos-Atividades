@@ -36,6 +36,5 @@ public Double getValorTotal() {
 		info += " - Valor Unitário: " + this.ValorUnitario;
 		return info;
 	}
-
 }
 
