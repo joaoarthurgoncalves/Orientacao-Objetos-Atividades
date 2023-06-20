@@ -1,10 +1,8 @@
-package execucao;
+ackage execucao;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-import modelo.Computador;
 import modelo.Prato;
 
 public class PratoExec {
@@ -14,6 +12,8 @@ public class PratoExec {
 		List<Prato> Lista = new ArrayList<>();
 		
 		Scanner sc = new Scanner (System.in);
+		
+	Double Valor = 0.0;
 		
 		for(int i=1; i<=3; i++) {
 			
@@ -33,6 +33,8 @@ public class PratoExec {
 			Double valorUnitario = (Double.parseDouble(sc.nextLine()));
 			prat.setValorUnitario(valorUnitario);
 			
+			Valor = Valor + prat.getValorTotal();
+			
 			Lista.add(prat);
 			
 			System.out.println("\n");
@@ -43,6 +45,8 @@ public class PratoExec {
 		System.out.println("/-------Pratos Registrados-------/");
 		for(Prato pt : Lista) {
 			System.out.println(pt.getInfo());
+			
 		}
+		
 	}
 }
