@@ -28,10 +28,11 @@ public class PessoaExec {
 			opcao = Integer.parseInt(sc.nextLine());
 			
 			if(opcao == 1) {
-				//CADASTRAR
-				System.out.println();
-				System.out.println("Cadastro da pessoa");
+			//Cadastrar Pessoa
+				System.out.println("Opção selecionada: Cadastrar Pessoa");
 				
+				System.out.println();
+			
 				Pessoa pp = new Pessoa();
 				
 				System.out.print("Informe o nome: ");
@@ -42,28 +43,29 @@ public class PessoaExec {
 				lista.add(pp);
 				
 			} else if(opcao == 2) {
-				//Listar Pessoas Cadastradas
-
-				System.out.println("\nListagem das pessoas cadastradas: ");
+			//Listar Pessoas Cadastradas
+				System.out.println("Opção selecionada: Listar Pessoas");
+				
+				System.out.println("\n Listagem das pessoas cadastradas: ");
 				for(Pessoa pes : lista) {
 					System.out.println(pes.getInfo());
 				}
 				
 			} else if(opcao == 3) {
-				//Excluir Pessoa (com base no índice)
+			//Excluir Pessoa (com base no índice)
 
-				System.out.println("\nExclusão de pessoa");
+			System.out.println("\nOpção selecionada: Excluir Pessoa");
 				
 				System.out.print("Informe o índice a excluir: ");
 				Integer indice = Integer.parseInt(sc.nextLine());
 				if(indice <= lista.size()-1) {
-				//Excluir
+				
 					lista.remove(indice.intValue());
 				} else
 					System.out.println("Este valor de índice não está cadastrado!");
 			
 			} else if(opcao == 4) {
-				//Excluir todas as pessoas cadastradas.
+			//Excluir todas as pessoas cadastradas.
 			
 			System.out.println("Exclusão realizada com sucesso.");
 				while(lista.size() > 0)
@@ -81,4 +83,3 @@ public class PessoaExec {
 		sc.close();
 	}
 }
-
