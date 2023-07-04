@@ -16,7 +16,7 @@ public class PessoaExec {
 		Integer opcao;
 		do {
 
-			System.out.println("---PESSOAS: MENU DE CADASTRO---");
+			System.out.println("\n ---PESSOAS: MENU DE CADASTRO---");
 			System.out.println("|Opções:                    \n");
 			System.out.println("(1) Cadastrar              ");
 			System.out.println("(2) Listar                 ");
@@ -43,15 +43,16 @@ public class PessoaExec {
 				
 			} else if(opcao == 2) {
 				//Listar Pessoas Cadastradas
-				System.out.println("Listagem das pessoas cadastradas: ");
+
+				System.out.println("\nListagem das pessoas cadastradas: ");
 				for(Pessoa pes : lista) {
 					System.out.println(pes.getInfo());
 				}
 				
 			} else if(opcao == 3) {
 				//Excluir Pessoa (com base no índice)
-				System.out.println();
-				System.out.println("Exclusão de pessoa");
+
+				System.out.println("\nExclusão de pessoa");
 				
 				System.out.print("Informe o índice a excluir: ");
 				Integer indice = Integer.parseInt(sc.nextLine());
@@ -70,7 +71,7 @@ public class PessoaExec {
 		
 				
 			} else if(opcao == 0) {
-				System.out.println("Fim do programa!");
+				System.out.println("Programa Finalizado.");
 			
 			} else 
 				System.out.println("Opção inválida!");
